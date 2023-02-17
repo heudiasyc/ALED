@@ -1,0 +1,22 @@
+{
+  "transforms": {
+    "crop_input": true,
+    "crop_size": 256,
+    "pad_val": true,
+    "pad_size_x": 3,
+    "pad_size_y": 2
+  },
+  "datasets": {
+    "path_train": "/path/to/the/preprocessed/training/mvsec/dataset",
+    "path_val": "/path/to/the/preprocessed/validation/mvsec/dataset",
+    "is_preprocessed_train": true,
+    "is_preprocessed_val": true
+  },
+  "num_workers": 4,
+  "batch_size_train": 4,
+  "batch_size_val": 1,
+  "learning_rate": 0.0001,
+  "epochs": 50,
+  "weight_mse_grad_match_epoch_0": 0.1,
+  "losses_display_every_x": 20
+}

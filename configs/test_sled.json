@@ -1,0 +1,13 @@
+{
+  "transforms": {
+    "pad_test": false
+  },
+  "datasets": {
+    "path_test": "/path/to/the/preprocessed/testing/sled/dataset",
+    "is_preprocessed_test": true
+  },
+  "lidar_max_range": 200.0,
+  "num_workers": 4,
+  "batch_size_test": 1,
+  "save_visualization": false
+}

@@ -1,0 +1,15 @@
+{
+  "transforms": {
+    "pad_test": true,
+    "pad_size_x": 3,
+    "pad_size_y": 2
+  },
+  "datasets": {
+    "path_test": "/path/to/the/preprocessed/testing/mvsec/dataset",
+    "is_preprocessed_test": true
+  },
+  "lidar_max_range": 100.0,
+  "num_workers": 1,
+  "batch_size_test": 1,
+  "save_visualization": false
+}
