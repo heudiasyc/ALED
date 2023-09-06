@@ -167,7 +167,7 @@ def sorted_slice_mask(arr, l_val, r_val):
 
 
 def preprocess_recording(paths):
-  """Recording preprocessig function, which can be called in parallel"""
+  """Recording preprocessing function, which can be called in parallel"""
 
   # We start by getting the args
   global args

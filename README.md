@@ -5,17 +5,19 @@
 This repository holds the code associated with the "Learning to Estimate Two Dense Depths from LiDAR and Event Data" article. If you use this code as part of your work, please cite:
 
 ```BibTeX
-@inproceedings{Brebion2023LearningToET,
+@inproceedings{Brebion2023LearningTE,
   title={Learning to Estimate Two Dense Depths from LiDAR and Event Data},
   author={Vincent Brebion and Julien Moreau and Franck Davoine},
-  booktitle={Scandinavian Conference on Image Analysis},
+  booktitle={Image Analysis},
+  publisher={Springer Nature Switzerland},
+  pages={517-533},
   year={2023}
 }
 ```
 
 ## The SLED dataset
 
-Details and download links for the SLED dataset can be found in its dedicated GitHub repository: <https://github.com/vbrebion/SLED>.
+Details and download links for the SLED dataset can be found in its dedicated GitHub repository: <https://github.com/heudiasyc/SLED>.
 
 ## Overview
 
@@ -31,7 +33,7 @@ To install the dependencies, create a micromamba environment as follows:
 ```txt
 micromamba create --name aled
 micromamba activate aled
-micromamba install pytorch torchvision torchaudio pytorch-cuda=11.7 h5py matplotlib opencv pandas pyyaml tensorboard tqdm -c pytorch -c nvidia -c conda-forge
+micromamba install pytorch torchvision pytorch-cuda=11.7 h5py matplotlib opencv pandas pyyaml tensorboard tqdm -c pytorch -c nvidia -c conda-forge
 ```
 
 **Note:** PyTorch version 1.13.1 was used as part of the development and testing of this code. Slightly older/newer versions should also be compatible, but try to stick to this version if possible!
@@ -39,7 +41,7 @@ micromamba install pytorch torchvision torchaudio pytorch-cuda=11.7 h5py matplot
 Once the environment is created, you can then clone this repository:
 
 ```txt
-git clone https://github.com/vbrebion/ALED.git
+git clone https://github.com/heudiasyc/ALED.git
 ```
 
 ## Preprocessing the datasets

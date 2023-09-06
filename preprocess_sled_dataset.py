@@ -49,7 +49,7 @@ def parse_args():
 
 
 def preprocess_recording(recording_path):
-  """Recording preprocessig function, which can be called in parallel"""
+  """Recording preprocessing function, which can be called in parallel"""
 
   # We start by getting the args
   global args
