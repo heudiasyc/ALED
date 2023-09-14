@@ -50,7 +50,7 @@ def compute_event_volume(events, bins):
   """
   From a numpy array of events, computes an event volume, as described in the "Learning to Detect
   Objects with a 1 Megapixel Event Camera" article by Perot et al.
-  This implementation is optimized for fast computation (which is still quite slow :c), thanks to
+  This implementation is optimized for fast computation (which is still a bit slow :c), thanks to
   https://stackoverflow.com/a/55739936
   """
 
@@ -275,7 +275,7 @@ def preprocess_recording(paths):
 
     # Once all the LiDAR point clouds, events and depth images have been added to the sequence, we
     # save it
-    torch.save(sequence, f"{args.path_processed}/{prefix}_seq{i:02}.pt")
+    torch.save(sequence, f"{args.path_processed}/{prefix}_seq{i:04}.pt")
 
 
 def main():

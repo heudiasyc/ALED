@@ -71,7 +71,7 @@ To preprocess the MVSEC dataset, use the following command:
 
 ```txt
 micromamba activate aled
-python3 preprocess_mvsec_dataset.py <path_raw> <path_processed> 5 <lidar_clouds_per_seq> 200.0 -j 8
+python3 preprocess_mvsec_dataset.py <path_raw> <path_processed> 5 <lidar_clouds_per_seq> 100.0 -j 8
 ```
 
 where:
@@ -80,7 +80,7 @@ where:
 - `<path_processed>` is the path to the output folder which will contain the processed MVSEC dataset;
 - `5` is the number of bins B used to create the event volumes;
 - `<lidar_clouds_per_seq>` is the number of LiDAR clouds contained per sequence (set `3` for the training set, `20` for the validation set, and `0` for the testing set);
-- `200.0` is the maximum LiDAR range (in meters);
+- `100.0` is the maximum LiDAR range (in meters);
 - `-j 8` is the number of processes spawned in parallel to preprocess the dataset.
 
 ## Testing
