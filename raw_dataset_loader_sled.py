@@ -42,7 +42,7 @@ def compute_event_volume(events, bins):
     # We set these values inside the event volume
     event_volume[i+bins*u_evts["pol"], u_evts["y"], u_evts["x"]] = sums
 
-  # We finally return the event volume, in the pytorch format
+  # We finally return the event volume, in the PyTorch format
   return torch.from_numpy(event_volume)
 
 

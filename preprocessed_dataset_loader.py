@@ -25,9 +25,9 @@ class PreprocessedDataset(Dataset):
         "preprocessed .pt sequence")
 
     # If we are in validation, we only want to load the first sequence of each recording, i.e. the
-    # sequence finishing with "_seq00.pt"
+    # sequence finishing with "_seq0000.pt"
     if is_val:
-      self.sequences_paths = sorted(glob(path_dataset+"/*_seq00.pt"))
+      self.sequences_paths = sorted(glob(path_dataset+"/*_seq0000.pt"))
     else:
       self.sequences_paths = sorted(glob(path_dataset+"/*.pt"))
 
