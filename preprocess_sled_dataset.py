@@ -140,7 +140,7 @@ def preprocess_recording(recording_path):
 
     # Once all the LiDAR point clouds, events and depth images have been added to the sequence, we
     # save it
-    torch.save(sequence, f"{args.path_processed}/{recording_path[:-4]}_seq{i:02}.pt")
+    torch.save(sequence, f"{args.path_processed}/{recording_path[:-4]}_seq{i:04}.pt")
 
   # Once the recording has been fully explored, we don't forget to close it
   recording.close()
