@@ -33,10 +33,10 @@ To install the dependencies, create a micromamba environment as follows:
 ```txt
 micromamba create --name aled
 micromamba activate aled
-micromamba install pytorch torchvision pytorch-cuda=11.7 h5py matplotlib opencv pandas pyyaml tensorboard tqdm -c pytorch -c nvidia -c conda-forge
+micromamba install pytorch torchvision pytorch-cuda=12.1 h5py matplotlib opencv pandas pyyaml tensorboard tqdm -c pytorch -c nvidia -c conda-forge
 ```
 
-**Note:** PyTorch version 1.13.1 was used as part of the development and testing of this code. Slightly older/newer versions should also be compatible, but try to stick to this version if possible!
+**Note:** PyTorch versions between 1.13 and 2.1 have been tested and are compatible with this code. Slightly older/newer versions should also be compatible, but try to stick to these versions if possible!
 
 Once the environment is created, you can then clone this repository:
 
