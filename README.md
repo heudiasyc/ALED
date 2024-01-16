@@ -91,7 +91,7 @@ If you only want to test the ALED network on the SLED or the MVSEC datasets, pre
 git lfs pull
 ```
 
-If you rather wish test the network after training it by yourself, see the [Training](#training) section first.
+If you rather wish to test the network after training it by yourself, see the [Training](#training) section first.
 
 In both cases, use the following commands to test the network:
 
