@@ -143,15 +143,15 @@ def main():
   # We get the "how often should we display the losses in the terminal" parameter
   losses_display_every_x = config["losses_display_every_x"]
 
-  # We set to zero the running losses
-  running_bf_loss_l1 = 0.0
-  running_bf_loss_ms = 0.0
-  running_af_loss_l1 = 0.0
-  running_af_loss_ms = 0.0
-  running_loss = 0.0
-
   # Then, for each epoch
   for epoch in tqdm(range(num_epochs), "Epochs"):
+    # We set to zero the running losses
+    running_bf_loss_l1 = 0.0
+    running_bf_loss_ms = 0.0
+    running_af_loss_l1 = 0.0
+    running_af_loss_ms = 0.0
+    running_loss = 0.0
+
     # We set the model to training mode
     model.train()
 
