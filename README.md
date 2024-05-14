@@ -85,11 +85,7 @@ where:
 
 ## Testing
 
-If you only want to test the ALED network on the SLED or the MVSEC datasets, pretrained sets of weights (the ones used in the article) are given in the `saves/` folder. Given their size, they are stored with Git LFS, so you will need to retrieve them with the following command before being able to use them:
-
-```bash
-git lfs pull
-```
+If you only want to test the ALED network on the SLED or the MVSEC datasets, pretrained sets of weights (the ones used in the article) are available using [this link](https://datasets.hds.utc.fr/share/V3LG5Dwa5OaJWaB). Once downloaded, they should be placed in the `saves/` folder.
 
 If you rather wish to test the network after training it by yourself, see the [Training](#training) section first.
 
