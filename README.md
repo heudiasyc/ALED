@@ -1,15 +1,22 @@
 # Learning to Estimate Two Dense Depths from LiDAR and Event Data
 
-![Example results](https://www.hds.utc.fr/~vbrebion/dokuwiki/_media/fr/teaser_learning_to_estimate.png)
+> [!WARNING]
+> This repository and the code it contains should be considered legacy, as ALED has been cleanly reimplemented as part of DELTA (our CVPRW 2025 paper).\
+> This repository will not receive any further update, and we highly advise you to use DELTA's code if you want to use ALED.\
+> For more details, see <https://github.com/heudiasyc/DELTA/>.
+
+![Example results](https://vbrebion.github.io/resources/publication_teasers_github/aled.png)
 
 This repository holds the code associated with the "Learning to Estimate Two Dense Depths from LiDAR and Event Data" article. If you use this code as part of your work, please cite:
 
 ```BibTeX
 @inproceedings{Brebion2023LearningTE,
-  title={Learning to Estimate Two Dense Depths from LiDAR and Event Data},
+  title={Learning to Estimate Two Dense Depths from {LiDAR} and Event Data},
   author={Vincent Brebion and Julien Moreau and Franck Davoine},
-  booktitle={Image Analysis},
-  publisher={Springer Nature Switzerland},
+  booktitle={Image Analysis - 22nd Scandinavian Conference, {SCIA} 2023, Sirkka, Finland, April 18-21, 2023, Proceedings, Part {II}},
+  series={Lecture Notes in Computer Science},
+  volume={13886},
+  publisher={Springer},
   pages={517-533},
   year={2023}
 }
@@ -85,7 +92,7 @@ where:
 
 ## Testing
 
-If you only want to test the ALED network on the SLED or the MVSEC datasets, pretrained sets of weights (the ones used in the article) are available using [this link](https://datasets.hds.utc.fr/share/V3LG5Dwa5OaJWaB). Once downloaded, they should be placed in the `saves/` folder.
+If you only want to test the ALED network on the SLED or the MVSEC datasets, pretrained sets of weights (the ones used in the article) are available using [this link](https://github.com/heudiasyc/ALED/releases/latest). Once downloaded, they should be placed in the `saves/` folder.
 
 If you rather wish to test the network after training it by yourself, see the [Training](#training) section first.
 
